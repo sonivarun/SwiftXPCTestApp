@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048E4B101F71CF7800463E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B0F1F71CF7800463E26 /* AppDelegate.swift */; };
+		048E4B141F71CF7800463E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048E4B131F71CF7800463E26 /* Assets.xcassets */; };
+		048E4B2D1F71D2F800463E26 /* Hash Calculation Service.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 048E4B221F71D2F800463E26 /* Hash Calculation Service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		048E4B371F71D9A000463E26 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B361F71D9A000463E26 /* main.swift */; };
+		048E4B391F71E5DB00463E26 /* HashCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B381F71E5DB00463E26 /* HashCalculationService.swift */; };
+		048E4B3A1F71E5DB00463E26 /* HashCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B381F71E5DB00463E26 /* HashCalculationService.swift */; };
+		048E4B3C1F71E8E200463E26 /* CalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B3B1F71E8E200463E26 /* CalculationService.swift */; };
+		048E4B3E1F71F8B900463E26 /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B3D1F71F8B900463E26 /* HashAlgorithm.swift */; };
+		048E4B3F1F71F8B900463E26 /* HashAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B3D1F71F8B900463E26 /* HashAlgorithm.swift */; };
+		048E4B411F71F9F500463E26 /* HashCalculationProgressObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B401F71F9F500463E26 /* HashCalculationProgressObserver.swift */; };
+		048E4B421F71F9F500463E26 /* HashCalculationProgressObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B401F71F9F500463E26 /* HashCalculationProgressObserver.swift */; };
+		048E4B451F71FC8400463E26 /* FileHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B441F71FC8400463E26 /* FileHash.swift */; };
+		048E4B471F71FD4700463E26 /* FileHashList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B461F71FD4700463E26 /* FileHashList.swift */; };
+		048E4B4A1F72079B00463E26 /* HashCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B491F72079B00463E26 /* HashCalculator.swift */; };
+		048E4B4C1F7207B000463E26 /* HashCalculatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B4B1F7207B000463E26 /* HashCalculatorDelegate.swift */; };
+		048E4B4E1F7207C500463E26 /* XPCHashCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B4D1F7207C500463E26 /* XPCHashCalculator.swift */; };
+		048E4B501F72CD0400463E26 /* HashCalculatorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B4F1F72CD0400463E26 /* HashCalculatorWindowController.swift */; };
+		048E4B521F73B65E00463E26 /* FileHashCalculator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048E4B511F73B65E00463E26 /* FileHashCalculator.xib */; };
+		048E4B541F73D00E00463E26 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048E4B531F73D00E00463E26 /* MainMenu.xib */; };
+		048E4B561F7518C500463E26 /* CalculateFileHashOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E4B551F7518C500463E26 /* CalculateFileHashOperation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048E4B2B1F71D2F800463E26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048E4B041F71CF7800463E26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048E4B211F71D2F800463E26;
+			remoteInfo = "Hash Calculation Service";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		048E4B311F71D2F800463E26 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				048E4B2D1F71D2F800463E26 /* Hash Calculation Service.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048E4B0C1F71CF7800463E26 /* File Hash Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hash Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048E4B0F1F71CF7800463E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		048E4B131F71CF7800463E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		048E4B181F71CF7800463E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048E4B221F71D2F800463E26 /* Hash Calculation Service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = "Hash Calculation Service.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		048E4B2A1F71D2F800463E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048E4B351F71D99F00463E26 /* Hash Calculation Service-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hash Calculation Service-Bridging-Header.h"; sourceTree = "<group>"; };
+		048E4B361F71D9A000463E26 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		048E4B381F71E5DB00463E26 /* HashCalculationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashCalculationService.swift; sourceTree = "<group>"; };
+		048E4B3B1F71E8E200463E26 /* CalculationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationService.swift; sourceTree = "<group>"; };
+		048E4B3D1F71F8B900463E26 /* HashAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashAlgorithm.swift; sourceTree = "<group>"; };
+		048E4B401F71F9F500463E26 /* HashCalculationProgressObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashCalculationProgressObserver.swift; sourceTree = "<group>"; };
+		048E4B441F71FC8400463E26 /* FileHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHash.swift; sourceTree = "<group>"; };
+		048E4B461F71FD4700463E26 /* FileHashList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHashList.swift; sourceTree = "<group>"; };
+		048E4B491F72079B00463E26 /* HashCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashCalculator.swift; sourceTree = "<group>"; };
+		048E4B4B1F7207B000463E26 /* HashCalculatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashCalculatorDelegate.swift; sourceTree = "<group>"; };
+		048E4B4D1F7207C500463E26 /* XPCHashCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCHashCalculator.swift; sourceTree = "<group>"; };
+		048E4B4F1F72CD0400463E26 /* HashCalculatorWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashCalculatorWindowController.swift; sourceTree = "<group>"; };
+		048E4B511F73B65E00463E26 /* FileHashCalculator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileHashCalculator.xib; sourceTree = "<group>"; };
+		048E4B531F73D00E00463E26 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		048E4B551F7518C500463E26 /* CalculateFileHashOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateFileHashOperation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048E4B091F71CF7800463E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048E4B1F1F71D2F800463E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048E4B031F71CF7800463E26 = {
+			isa = PBXGroup;
+			children = (
+				048E4B341F71D44000463E26 /* Common */,
+				048E4B0E1F71CF7800463E26 /* File Hash Calculator */,
+				048E4B231F71D2F800463E26 /* Hash Calculation Service */,
+				048E4B0D1F71CF7800463E26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		048E4B0D1F71CF7800463E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B0C1F71CF7800463E26 /* File Hash Calculator.app */,
+				048E4B221F71D2F800463E26 /* Hash Calculation Service.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048E4B0E1F71CF7800463E26 /* File Hash Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B481F72077100463E26 /* HashCalculator */,
+				048E4B431F71FC6C00463E26 /* FIleHashes */,
+				048E4B0F1F71CF7800463E26 /* AppDelegate.swift */,
+				048E4B4F1F72CD0400463E26 /* HashCalculatorWindowController.swift */,
+				048E4B131F71CF7800463E26 /* Assets.xcassets */,
+				048E4B181F71CF7800463E26 /* Info.plist */,
+				048E4B511F73B65E00463E26 /* FileHashCalculator.xib */,
+				048E4B531F73D00E00463E26 /* MainMenu.xib */,
+			);
+			path = "File Hash Calculator";
+			sourceTree = "<group>";
+		};
+		048E4B231F71D2F800463E26 /* Hash Calculation Service */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B3B1F71E8E200463E26 /* CalculationService.swift */,
+				048E4B551F7518C500463E26 /* CalculateFileHashOperation.swift */,
+				048E4B361F71D9A000463E26 /* main.swift */,
+				048E4B351F71D99F00463E26 /* Hash Calculation Service-Bridging-Header.h */,
+				048E4B2A1F71D2F800463E26 /* Info.plist */,
+			);
+			path = "Hash Calculation Service";
+			sourceTree = "<group>";
+		};
+		048E4B341F71D44000463E26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B3D1F71F8B900463E26 /* HashAlgorithm.swift */,
+				048E4B381F71E5DB00463E26 /* HashCalculationService.swift */,
+				048E4B401F71F9F500463E26 /* HashCalculationProgressObserver.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		048E4B431F71FC6C00463E26 /* FIleHashes */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B441F71FC8400463E26 /* FileHash.swift */,
+				048E4B461F71FD4700463E26 /* FileHashList.swift */,
+			);
+			path = FIleHashes;
+			sourceTree = "<group>";
+		};
+		048E4B481F72077100463E26 /* HashCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				048E4B491F72079B00463E26 /* HashCalculator.swift */,
+				048E4B4B1F7207B000463E26 /* HashCalculatorDelegate.swift */,
+				048E4B4D1F7207C500463E26 /* XPCHashCalculator.swift */,
+			);
+			path = HashCalculator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		048E4B0B1F71CF7800463E26 /* File Hash Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048E4B1B1F71CF7800463E26 /* Build configuration list for PBXNativeTarget "File Hash Calculator" */;
+			buildPhases = (
+				048E4B081F71CF7800463E26 /* Sources */,
+				048E4B091F71CF7800463E26 /* Frameworks */,
+				048E4B0A1F71CF7800463E26 /* Resources */,
+				048E4B311F71D2F800463E26 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048E4B2C1F71D2F800463E26 /* PBXTargetDependency */,
+			);
+			name = "File Hash Calculator";
+			productName = "File Hash Calculator";
+			productReference = 048E4B0C1F71CF7800463E26 /* File Hash Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		048E4B211F71D2F800463E26 /* Hash Calculation Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048E4B2E1F71D2F800463E26 /* Build configuration list for PBXNativeTarget "Hash Calculation Service" */;
+			buildPhases = (
+				048E4B1E1F71D2F800463E26 /* Sources */,
+				048E4B1F1F71D2F800463E26 /* Frameworks */,
+				048E4B201F71D2F800463E26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hash Calculation Service";
+			productName = "Hash Calculation Service";
+			productReference = 048E4B221F71D2F800463E26 /* Hash Calculation Service.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048E4B041F71CF7800463E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Slava;
+				TargetAttributes = {
+					048E4B0B1F71CF7800463E26 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					048E4B211F71D2F800463E26 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 048E4B071F71CF7800463E26 /* Build configuration list for PBXProject "File Hash Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 048E4B031F71CF7800463E26;
+			productRefGroup = 048E4B0D1F71CF7800463E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048E4B0B1F71CF7800463E26 /* File Hash Calculator */,
+				048E4B211F71D2F800463E26 /* Hash Calculation Service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048E4B0A1F71CF7800463E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048E4B141F71CF7800463E26 /* Assets.xcassets in Resources */,
+				048E4B521F73B65E00463E26 /* FileHashCalculator.xib in Resources */,
+				048E4B541F73D00E00463E26 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048E4B201F71D2F800463E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048E4B081F71CF7800463E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048E4B411F71F9F500463E26 /* HashCalculationProgressObserver.swift in Sources */,
+				048E4B3E1F71F8B900463E26 /* HashAlgorithm.swift in Sources */,
+				048E4B501F72CD0400463E26 /* HashCalculatorWindowController.swift in Sources */,
+				048E4B471F71FD4700463E26 /* FileHashList.swift in Sources */,
+				048E4B101F71CF7800463E26 /* AppDelegate.swift in Sources */,
+				048E4B4A1F72079B00463E26 /* HashCalculator.swift in Sources */,
+				048E4B391F71E5DB00463E26 /* HashCalculationService.swift in Sources */,
+				048E4B4E1F7207C500463E26 /* XPCHashCalculator.swift in Sources */,
+				048E4B451F71FC8400463E26 /* FileHash.swift in Sources */,
+				048E4B4C1F7207B000463E26 /* HashCalculatorDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048E4B1E1F71D2F800463E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048E4B561F7518C500463E26 /* CalculateFileHashOperation.swift in Sources */,
+				048E4B421F71F9F500463E26 /* HashCalculationProgressObserver.swift in Sources */,
+				048E4B3C1F71E8E200463E26 /* CalculationService.swift in Sources */,
+				048E4B3F1F71F8B900463E26 /* HashAlgorithm.swift in Sources */,
+				048E4B371F71D9A000463E26 /* main.swift in Sources */,
+				048E4B3A1F71E5DB00463E26 /* HashCalculationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048E4B2C1F71D2F800463E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048E4B211F71D2F800463E26 /* Hash Calculation Service */;
+			targetProxy = 048E4B2B1F71D2F800463E26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		048E4B191F71CF7800463E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		048E4B1A1F71CF7800463E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		048E4B1C1F71CF7800463E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "File Hash Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ksi.File-Hash-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		048E4B1D1F71CF7800463E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "File Hash Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ksi.File-Hash-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		048E4B2F1F71D2F800463E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hash Calculation Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ksi.Hash-Calculation-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hash Calculation Service/Hash Calculation Service-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		048E4B301F71D2F800463E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hash Calculation Service/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ksi.Hash-Calculation-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Hash Calculation Service/Hash Calculation Service-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048E4B071F71CF7800463E26 /* Build configuration list for PBXProject "File Hash Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048E4B191F71CF7800463E26 /* Debug */,
+				048E4B1A1F71CF7800463E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048E4B1B1F71CF7800463E26 /* Build configuration list for PBXNativeTarget "File Hash Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048E4B1C1F71CF7800463E26 /* Debug */,
+				048E4B1D1F71CF7800463E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		048E4B2E1F71D2F800463E26 /* Build configuration list for PBXNativeTarget "Hash Calculation Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048E4B2F1F71D2F800463E26 /* Debug */,
+				048E4B301F71D2F800463E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 048E4B041F71CF7800463E26 /* Project object */;
+}
